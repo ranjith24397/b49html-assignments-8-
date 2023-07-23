@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ .star{
+  color: red;
+ }
+ .cointainer{
+  width:100vw;
+  height: 100vh;
+  border: 1px;
+  padding: 10px;
+ }
+ .firstname{
+  margin-right: 8px;
+  margin-bottom: 8px;
+ }
+ .emailid{
+  width:428px;
+ }
+ .checked{
+  color: orange;
+ }
+ h4{
+  margin-bottom: 6px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+ }
+ p{
+  margin-top: 5px;
+  font-size: small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .paragraph{
+  font-size: 15px;
+  font-weight: bold;
+ }
+
+ 
+.grid1{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(5,1fr);
+  line-height: 2;
+}
+.grid2{
+
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(5,1fr);
+  line-height: 2;
+}
+.btn{
+  border-radius: 3px;
+  color: white;
+  background-color: cornflowerblue;
+  padding: 5px;
+  border-top: 5px;
+  border: 1px solid black;
+}
+.itempurchase{
+  background-color: lightgray;
+  padding: 3px;
+}
+.itemservice{
+  background-color: white;
+  padding: 3px;
+}
+.itemcompany{
+  background-color: lightgray;
+  padding: 3px;
+}
+.items1{
+  background-color: lightgray;
+  padding: 3px;
+}
+.items2{
+  background-color: white;
+  padding: 3px;
+}
+.items3{
+  background-color: lightgray;
+  padding: 3px;
+}
+  </style>
+</head>
+<body>
+  <div class="cointainer">
+    <div class="form-group">
+      <label for="name">Name<span class="star">*</span></label>
+      <input type="text" class="firstname" id="name" placeholder="Enter First Name">
+      <label for="lastname">Last Name<span class="star">*</span></label>
+      <input type="text" class="lastname" id="lastname" placeholder="Enter Last Name"></br><br>
+      <label for="email">Email<span class="star">*</span></label>
+      <input type="email" class="emailid" id="email" placeholder="Enter valid emailid">
+      <div>
+        <h4>Your Experience</h4>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p>Overall,how would you rate your experience with us?</p>
+      </div>
+      <div>
+        <p class="paragraph">How satisfied are you with<span class="star">*</span></p>
+      </div>
+    
+      <div class="grid1">
+        <div></div>
+        <div>Very Unsatisfied</div>
+        <div>Unsatisfied</div>
+        <div>Neutral</div>
+        <div>Satisfied</div>
+        <div>Very Satisfied</div>
+        <div class="itempurchase">Purchase</div>
+        <div class="itempurchase"><input type="radio" name="1" class="radio"></div>
+        <div class="itempurchase"><input type="radio" name="1" class="radio"></div>
+        <div class="itempurchase"><input type="radio" name="1" class="radio"></div>
+        <div class="itempurchase"><input type="radio" name="1" class="radio"></div>
+        <div class="itempurchase"><input type="radio" name="1" class="radio"></div>
+        <div class="itemservice">Services</div>
+        <div class="itemservice"><input type="radio" name="2" class="radio"></div>
+        <div class="itemservice"><input type="radio" name="2" class="radio"></div>
+        <div class="itemservice"><input type="radio" name="2" class="radio"></div>
+        <div class="itemservice"><input type="radio" name="2" class="radio"></div>
+        <div class="itemservice"><input type="radio" name="2" class="radio"></div>
+        <div class="itemcompany">Company Overall</div>
+        <div class="itemcompany"><input type="radio" name="3" class="radio"></div>
+        <div class="itemcompany"><input type="radio" name="3" class="radio"></div>
+        <div class="itemcompany"><input type="radio" name="3" class="radio"></div>
+        <div class="itemcompany"><input type="radio" name="3" class="radio"></div>
+        <div class="itemcompany"><input type="radio" name="3" class="radio"></div>
+      </div>
+      <p class="paragraph">How likely are you to<span class="star">*</span></p>
+      <div class="grid2">
+        <div></div>
+        <div>Very Unlikely</div>
+        <div>Unlikely</div>
+        <div>Neutral</div>
+        <div>Likely</div>
+        <div>Very Likely</div>
+        <div class="items1">Buy from us again</div>
+        <div class="items1"><input type="radio" name="4" class="radio"></div>
+        <div class="items1"><input type="radio" name="4" class="radio"></div>
+        <div class="items1"><input type="radio" name="4" class="radio"></div>
+        <div class="items1"><input type="radio" name="4" class="radio"></div>
+        <div class="items1"><input type="radio" name="4" class="radio"></div>
+        <div class="items2">Recommend our products to others</div>
+        <div class="items2"><input type="radio" name="5" class="radio"></div>
+        <div class="items2"><input type="radio" name="5" class="radio"></div>
+        <div class="items2"><input type="radio" name="5" class="radio"></div>
+        <div class="items2"><input type="radio" name="5" class="radio"></div>
+        <div class="items2"><input type="radio" name="5" class="radio"></div>
+        <div class="items3">Recommend our company to others</div>
+        <div class="items3"><input type="radio" name="6" class="radio"></div>
+        <div class="items3"><input type="radio" name="6" class="radio"></div>
+        <div class="items3"><input type="radio" name="6" class="radio"></div>
+        <div class="items3"><input type="radio" name="6" class="radio"></div>
+        <div class="items3"><input type="radio" name="6" class="radio"></div>
+      </div>
+      <div>
+        <h4>Additional comments or suggestions</h4>
+        <textarea rows="7" cols="90"></textarea>
+      </div>
+      <input class="btn" type="submit" value="submit">
+    </div>
+  </div>
+</body>
+</html>
