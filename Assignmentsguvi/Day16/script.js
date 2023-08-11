@@ -1,27 +1,48 @@
-const greet = (message = "", callback = (n) => {}) => {
-  console.log(message);
-  callback(message);
+window.onload = function () {
+  let countdown = document.getElementById("countdown");
+  let statement = document.getElementById("statement");
+  statement.style.visibility = "hidden";
+
+  countdown.innerHTML = 10;
+  setTimeout(function () 
+  {
+    countdown.innerHTML = 9;
+    setTimeout(function () 
+    {
+      countdown.innerHTML = 8;
+      setTimeout(function () 
+      {
+        countdown.innerHTML = 7;
+        setTimeout(function () 
+        {
+          countdown.innerHTML = 6;
+          setTimeout(function () 
+          {
+            countdown.innerHTML = 5;
+            setTimeout(function () 
+            {
+              countdown.innerHTML = 4;
+              setTimeout(function () 
+              {
+                countdown.innerHTML = 3;
+                setTimeout(function () 
+                {
+                  countdown.innerHTML = 2;
+                  setTimeout(function () 
+                  {
+                    countdown.innerHTML = 1;
+                    setTimeout(function () 
+                    {
+                      countdown.style.visibility = "hidden";
+                      statement.style.visibility = "visible";
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
 };
-
-greet(10, () => {
-  greet(9, () => {
-    greet(8, () => {
-      greet(7, () => {
-        greet(6, () => {
-          greet(5, () => {
-            greet(4, () => {
-              greet(3, () => {
-                greet(2, () => {
-                  greet(1, () => {
-                    greet("Happy Independence Day!!!");
-                  });
-                });
-              });
-            });
-          });
-        });
-      });
-    });
-  });
-});
-
